@@ -13,12 +13,21 @@ app.use(cors());
 // DB Config
 const db = require('./src/config/db');
 
-// Connect to MongoDB
-db.connectDB();
+const startServer = async () => {
+  try {
+    // Connect to MongoDB and wait for it to finish
+    await db.connectDB();
+    console.log('MongoDB Connected...');
 
-// Use Routes
-app.use('/api', require('./src/routes')); // Loads all routes
+    // Use Routes
+    app.use('/api', require('./src/routes')); // Loads all routes
 
-const port = process.env.PORT || 5000;
+    const port = process.env.PORT || 5000;
+    app.listen(port, () => console.log(`Server started on port ${port}`));
+  } catch (err) {
+    console.error('Could not connect to MongoDB:', err.message);
+    process.exit(1); // Exit process with failure
+  }
+};
 
-app.listen(port, () => console.log(`Server started on port ${port}`));
+startServer();
