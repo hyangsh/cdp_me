@@ -7,7 +7,7 @@ exports.getMealRecommendations = async (req, res, next) => {
   try {
     // Note: In a real app, userId would come from an auth middleware (e.g., req.user.id)
     // Using a mock ID for demonstration purposes.
-    const userId = "67256e759798b1765214759e"; 
+    const userId = "68fce1de61c6781a57e715ab"; // User ID provided by the user. 
     const { mealType = 'lunch' } = req.query;
 
     // 1. Fetch user's inventory with populated food item details
