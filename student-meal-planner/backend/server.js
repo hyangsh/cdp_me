@@ -17,7 +17,7 @@ const db = require('./src/config/db');
 db.connectDB();
 
 // Use Routes
-app.use('/api/inventory', require('./src/routes/inventory'));
+app.use('/api', require('./src/routes')); // Loads all routes
 
 const port = process.env.PORT || 5000;
 
