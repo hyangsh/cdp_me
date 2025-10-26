@@ -7,6 +7,10 @@ const cors = require('cors');
 const app = express();
 
 // Middleware
+app.use((req, res, next) => {
+  res.setHeader("Content-Security-Policy", "default-src 'self'; connect-src 'self' http://localhost:3000; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline';");
+  next();
+});
 app.use(express.json());
 app.use(cors({
   origin: 'http://localhost:3000',
