@@ -36,7 +36,7 @@ const startServer = async () => {
     app.use('/api', require('./src/routes')); // Loads all routes
     console.log('✅ Step 2: Routes loaded.');
 
-    const port = process.env.PORT || 5000;
+    const port = process.env.PORT || 5001; // 포트 번호를 5001로 변경
 
     console.log('⏳ Step 3: Starting server...');
     app.listen(port, () => console.log(`✅ Step 3: Server started on port ${port}`));
