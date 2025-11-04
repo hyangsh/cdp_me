@@ -17,7 +17,7 @@
 
 ### 1. 백엔드 서버 실행
 
-1.  `cdp_me/.git/student-meal-planner/backend` 폴더로 이동합니다.
+1.  `cdp_me/student-meal-planner/backend` 폴더로 이동합니다.
     ```bash
     cd cdp_me/.git/student-meal-planner/backend
     ```
@@ -33,7 +33,7 @@
 
 ### 2. 프론트엔드 앱 실행
 
-1.  (별도의 터미널에서) `cdp_me/.git/student-meal-planner/frontend` 폴더로 이동합니다.
+1.  (별도의 터미널에서) `cdp_me/student-meal-planner/frontend` 폴더로 이동합니다.
     ```bash
     cd cdp_me/.git/student-meal-planner/frontend
     ```
