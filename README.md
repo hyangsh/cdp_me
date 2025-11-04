@@ -19,7 +19,7 @@
 
 1.  `cdp_me/student-meal-planner/backend` 폴더로 이동합니다.
     ```bash
-    cd cdp_me/.git/student-meal-planner/backend
+    cd cdp_me/student-meal-planner/backend
     ```
 2.  필요한 패키지를 설치합니다.
     ```bash
@@ -35,7 +35,7 @@
 
 1.  (별도의 터미널에서) `cdp_me/student-meal-planner/frontend` 폴더로 이동합니다.
     ```bash
-    cd cdp_me/.git/student-meal-planner/frontend
+    cd cdp_me/student-meal-planner/frontend
     ```
 2.  필요한 패키지를 설치합니다.
     ```bash
